@@ -28880,9 +28880,10 @@ var Titulo = function Titulo(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Esto es un t\xEDtulo personalizado"), /*#__PURE__*/_react.default.createElement("h2", null, subTitle), /*#__PURE__*/_react.default.createElement("p", null, "Andrea Castilla Cocera"));
 };
 var root = _client.default.createRoot(document.getElementById('root'));
-root.render( /*#__PURE__*/_react.default.createElement(Titulo, {
+root.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Titulo, {
   subTitle: "T\xEDtulo 2"
-}));
+}), /*#__PURE__*/_react.default.createElement("h3", null, "Desarrollo de Interfaces 2\xBADAM")));
+//root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
 },{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

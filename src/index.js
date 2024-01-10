@@ -14,5 +14,11 @@ const Titulo = ({subTitle})=> {
     <p>Andrea Castilla Cocera</p>
  </div>;
 }
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Titulo subTitle="Título 2"/>);
+root.render(
+    <div>
+        <Titulo subTitle="Título 2"/>
+        <h3>Desarrollo de Interfaces 2ºDAM</h3>
+    </div>);
+//root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
