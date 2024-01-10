@@ -28875,15 +28875,41 @@ import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<h1>Hola perros</h1>);*/
 
-var Titulo = function Titulo(_ref) {
-  var subTitle = _ref.subTitle;
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Primera p\xE1gina React"), /*#__PURE__*/_react.default.createElement("h2", null, subTitle), /*#__PURE__*/_react.default.createElement("p", null, "Andrea Castilla Cocera"));
+/*import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const Titulo = ({subTitle})=> {
+ return <div>
+    <h1>Primera página React</h1>
+    <h2>{subTitle}</h2>
+    <p>Andrea Castilla Cocera</p>
+ </div>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <div>
+        <Titulo subTitle="Primeros pasos"/>
+        <h3>Desarrollo de Interfaces 2ºDAM</h3>
+    </div>);*/
+//root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
+
+var Titulo = function Titulo(prop) {
+  console.log(prop);
+  return /*#__PURE__*/_react.default.createElement("h2", null, prop.subTitle);
+};
+var Person = function Person(props) {
+  console.log(props);
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Nombre: ", props.nombre), /*#__PURE__*/_react.default.createElement("h1", null, "Apellidos: ", props.apellidos), /*#__PURE__*/_react.default.createElement("h1", null, "Edad: ", props.edad));
 };
 var root = _client.default.createRoot(document.getElementById('root'));
 root.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Titulo, {
   subTitle: "Primeros pasos"
-}), /*#__PURE__*/_react.default.createElement("h3", null, "Desarrollo de Interfaces 2\xBADAM")));
-//root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
+}), /*#__PURE__*/_react.default.createElement("h3", null, "Desarrollo de Interfaces 2\xBADAM"), /*#__PURE__*/_react.default.createElement(Person, {
+  nombre: "Juan",
+  apellidos: "P\xE9rez",
+  edad: "22"
+})));
 },{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
