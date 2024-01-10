@@ -28869,8 +28869,20 @@ if ("development" === 'production') {
 var _react = _interopRequireDefault(require("react"));
 var _client = _interopRequireDefault(require("react-dom/client"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-var root = _client.default.createRoot(document.getElementById("root"));
-root.render( /*#__PURE__*/_react.default.createElement("h1", null, "Hola perros"));
+/*import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<h1>Hola perros</h1>);*/
+
+var Titulo = function Titulo(_ref) {
+  var subTitle = _ref.subTitle;
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Esto es un t\xEDtulo personalizado"), /*#__PURE__*/_react.default.createElement("h2", null, subTitle), /*#__PURE__*/_react.default.createElement("p", null, "Andrea Castilla Cocera"));
+};
+var root = _client.default.createRoot(document.getElementById('root'));
+root.render( /*#__PURE__*/_react.default.createElement(Titulo, {
+  subTitle: "T\xEDtulo 2"
+}));
 },{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28896,7 +28908,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52672" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52730" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
