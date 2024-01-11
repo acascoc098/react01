@@ -1,9 +1,11 @@
+//PRUEBAS VARIAS 1
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<h1>Hola perros</h1>);*/
 
+//PRUEBAS VARIAS 2
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -23,6 +25,7 @@ root.render(
     </div>);*/
 //root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
 
+//PRUEBAS VARIAS 3
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
