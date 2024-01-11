@@ -28896,16 +28896,16 @@ root.render(
 
 var Titulo = function Titulo(prop) {
   console.log(prop);
-  return /*#__PURE__*/_react.default.createElement("h2", null, prop.subTitle);
+  return /*#__PURE__*/_react.default.createElement("h1", null, prop.subTitle);
 };
 var Person = function Person(props) {
   console.log(props);
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Nombre: ", props.nombre), /*#__PURE__*/_react.default.createElement("h1", null, "Apellidos: ", props.apellidos), /*#__PURE__*/_react.default.createElement("h1", null, "Edad: ", props.edad));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Nombre: ", props.nombre), /*#__PURE__*/_react.default.createElement("p", null, "Apellidos: ", props.apellidos), /*#__PURE__*/_react.default.createElement("p", null, "Edad: ", props.edad));
 };
 var root = _client.default.createRoot(document.getElementById('root'));
 root.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Titulo, {
   subTitle: "Primeros pasos"
-}), /*#__PURE__*/_react.default.createElement("h3", null, "Desarrollo de Interfaces 2\xBADAM"), /*#__PURE__*/_react.default.createElement(Person, {
+}), /*#__PURE__*/_react.default.createElement("h2", null, "Desarrollo de Interfaces 2\xBADAM"), /*#__PURE__*/_react.default.createElement(Person, {
   nombre: "Juan",
   apellidos: "P\xE9rez",
   edad: "22"
@@ -28935,7 +28935,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52730" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54854" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
