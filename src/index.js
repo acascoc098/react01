@@ -43,10 +43,15 @@ const Person = (props) =>{
     </div>;
 }
 
+function Footer(){
+    return <div><p>IES Virgen del Carmen</p></div>
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
         <Titulo subTitle="Primeros pasos"/>
         <h2>Desarrollo de Interfaces 2ºDAM</h2>
-        <Person nombre="Juan" apellidos="Pérez" edad="22"></Person>
+        <Person nombre="Juan" apellidos="Pérez" edad="22"/>
+        <Footer/>
     </div>);

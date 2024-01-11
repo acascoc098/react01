@@ -28869,12 +28869,14 @@ if ("development" === 'production') {
 var _react = _interopRequireDefault(require("react"));
 var _client = _interopRequireDefault(require("react-dom/client"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//PRUEBAS VARIAS 1
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<h1>Hola perros</h1>);*/
 
+//PRUEBAS VARIAS 2
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -28894,6 +28896,8 @@ root.render(
     </div>);*/
 //root.render(<h3>Desarrollo de Interfaces 2ºDAM</h3>); Solo se puede hacer un render, porque solo puede tener un elemento padre
 
+//PRUEBAS VARIAS 3
+
 var Titulo = function Titulo(prop) {
   console.log(prop);
   return /*#__PURE__*/_react.default.createElement("h1", null, prop.subTitle);
@@ -28902,6 +28906,9 @@ var Person = function Person(props) {
   console.log(props);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Nombre: ", props.nombre), /*#__PURE__*/_react.default.createElement("p", null, "Apellidos: ", props.apellidos), /*#__PURE__*/_react.default.createElement("p", null, "Edad: ", props.edad));
 };
+function Footer() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "IES Virgen del Carmen"));
+}
 var root = _client.default.createRoot(document.getElementById('root'));
 root.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(Titulo, {
   subTitle: "Primeros pasos"
@@ -28909,7 +28916,7 @@ root.render( /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*
   nombre: "Juan",
   apellidos: "P\xE9rez",
   edad: "22"
-})));
+}), /*#__PURE__*/_react.default.createElement(Footer, null)));
 },{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
